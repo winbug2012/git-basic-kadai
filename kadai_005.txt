@@ -1,0 +1,78 @@
+$ cd git_challenge
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
+$ ls
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
+$ ls
+hello_world.txt
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
+$ echo "Hello world! hello_world.txt
+> clear
+> q
+> ^C
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
+$ ls
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
+$ ls
+hello_world.txt
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
+$ git init
+Initialized empty Git repository in C:/Users/winbug2012/Desktop/git_challenge/.git/
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git add hello_world.txt
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "hello,world!を追加"
+bash: !を追加: event not found
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "hello worldを追加"
+[main (root-commit) b256fdd] hello worldを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git diff --staged
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git diff hello.world.txt
+fatal: ambiguous argument 'hello.world.txt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git log
+commit b256fdda96bd495816cad78289436b2ac4bcc154 (HEAD -> main)
+Author: winbug2012 <winbug2012@gmail.com>
+Date:   Fri Feb 28 09:45:07 2025 +0900
+
+    hello worldを追加
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$
