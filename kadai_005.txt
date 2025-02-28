@@ -1,45 +1,15 @@
-$ cd git_challenge
-
-winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
-$ ls
-
-winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
 $ ls
 hello_world.txt
 
-winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
-$ echo "Hello world! hello_world.txt
-> clear
-> q
-> ^C
-
-winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
-$ ls
-
-winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
-$ ls
-hello_world.txt
-
-winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (master)
-$ git init
-Initialized empty Git repository in C:/Users/winbug2012/Desktop/git_challenge/.git/
-
 winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
-$ git add hello_world.txt
-
-winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
-$ git commit -m "hello,world!を追加"
-bash: !を追加: event not found
+$ echo "Hello world" >> hello_world.txt
 
 winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
 $ git commit -m "hello worldを追加"
-[main (root-commit) b256fdd] hello worldを追加
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 hello_world.txt
-
-winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
-$ git commit -m "hello_world.txtを追加"
 On branch main
+Your branch is up to date with 'origin/main'.
+
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -48,8 +18,26 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
-$ git status
+$ ^C
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ ^C
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "hello worldを追加"
+[main 8c81cfb] hello worldを追加
+ 1 file changed, 1 insertion(+)
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "こんにちは世界"
 On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -58,21 +46,65 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
-$ git diff --staged
+$ ^C
 
 winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
-$ git diff hello.world.txt
-fatal: ambiguous argument 'hello.world.txt': unknown revision or path not in the working tree.
-Use '--' to separate paths from revisions, like this:
-'git <command> [<revision>...] -- [<file>...]'
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "こんにちは世界!を追加"
+bash: !を追加: event not found
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "こんにちは世界を追加"
+[main b7686cb] こんにちは世界を追加
+ 1 file changed, 1 insertion(+)
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ ^C
 
 winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
 $ git log
-commit b256fdda96bd495816cad78289436b2ac4bcc154 (HEAD -> main)
+commit b7686cb643d2aa9f4d2b1fcda7cc14f803a61f6c (HEAD -> main)
+Author: winbug2012 <winbug2012@gmail.com>
+Date:   Fri Feb 28 10:34:30 2025 +0900
+
+    こんにちは世界を追加
+
+commit 8c81cfb66452d578692d2527288d6426d2da2624
+Author: winbug2012 <winbug2012@gmail.com>
+Date:   Fri Feb 28 10:31:46 2025 +0900
+
+    hello worldを追加
+
+commit b256fdda96bd495816cad78289436b2ac4bcc154 (origin/main)
 Author: winbug2012 <winbug2012@gmail.com>
 Date:   Fri Feb 28 09:45:07 2025 +0900
 
     hello worldを追加
 
 winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
-$
+$ git --oneline
+unknown option: --oneline
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git log oneline
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+$ git log --oneline
+b7686cb (HEAD -> main) こんにちは世界を追加
+8c81cfb hello worldを追加
+b256fdd (origin/main) hello worldを追加
+
+winbug2012@▒f▒X▒N▒g▒b▒v MINGW64 ~/Desktop/git_challenge (main)
+
